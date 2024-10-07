@@ -13,12 +13,10 @@ public class Animal {
     }
 
     public static void main(String[] args) {
-        Animal duck = new Duck();
-        Animal fish = new Fish();
-        Animal pig = new Pig();
-        duck.display();
-        fish.display();
-        pig.display();
+        Animal[] animals = new Animal[3];
+        Duck duck = (Duck) Animal[0];
+        Fish fish = (Fish) Animal[1];
+        Pig pig = (Pig) Animal[2];
     }
 
 }
