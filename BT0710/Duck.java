@@ -1,15 +1,11 @@
 class Duck extends Animal {
-    @Override
-    public boolean canWalk() {
-        return true;
-    }
-    @Override
-    public boolean canSwim() {
-        return true;
+    public Duck() {
+        super (true, true);
     }
 
     @Override
-    public String getName() {
-        return "Duck";
+    public void display() {
+        System.out.println("Duck: ");
+        super.display();
     }
 }

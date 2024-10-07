@@ -1,15 +1,11 @@
 class Pig extends Animal {
-    @Override
-    public boolean canWalk() {
-        return true;
-    }
-    @Override
-    public boolean canSwim() {
-        return false;
+    public Pig() {
+        super (false, true);
     }
 
     @Override
-    public String getName() {
-        return "Pig";
+    public void display() {
+        System.out.println("Pig: ");
+        super.display();
     }
 }

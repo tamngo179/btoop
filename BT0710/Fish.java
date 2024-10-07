@@ -1,15 +1,11 @@
 class Fish extends Animal {
-    @Override
-    public boolean canWalk() {
-        return false;
-    }
-    @Override
-    public boolean canSwim() {
-        return true;
+    public Fish() {
+        super (true, false);
     }
 
     @Override
-    public String getName() {
-        return "Fish";
+    public void display() {
+        System.out.println("Fish: ");
+        super.display();
     }
 }
